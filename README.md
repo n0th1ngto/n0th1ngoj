@@ -1,4 +1,4 @@
-# n0th1ngoj
+# n0th1ng's OJ
 
 ## Project setup
 ```
