@@ -5,15 +5,33 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "export": "node ./src/scripts/autoExport.mjs"
   },
   "dependencies": {
+    "@babel/plugin-transform-class-static-block": "^7.24.4",
+    "@bytemd/plugin-gfm": "^1.21.0",
+    "@bytemd/plugin-highlight": "^1.21.0",
+    "@bytemd/vue-next": "^1.21.0",
+    "@faker-js/faker": "^8.4.1",
+    "axios": "^1.6.8",
     "core-js": "^3.8.3",
+    "express": "^4.19.2",
+    "fs-extra": "^11.2.0",
+    "moment": "^2.30.1",
+    "monaco-editor": "^0.48.0",
+    "monaco-editor-webpack-plugin": "^7.1.0",
+    "openapi": "^1.0.1",
+    "pinia": "^2.1.7",
+    "todomvc-app-css": "^2.4.3",
+    "v-calendar": "^3.1.2",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
+    "vuedraggable": "^4.1.0",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@arco-design/web-vue": "^2.55.1",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",

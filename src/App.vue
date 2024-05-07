@@ -1,9 +1,15 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div id="app">
+    <template v-if="route.path.startsWith('/user')">
+      <router-view></router-view>
+    </template>
+    <template v-if="route.path.startsWith('/view/question')">
+      <router-view></router-view>
+    </template>
+    <template v-else>
+      <BasicLayout></BasicLayout>
+    </template>
+  </div>
 </template>
 
 <style>
@@ -28,3 +34,10 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+
+<script setup>
+import { useRoute } from 'vue-router'
+import BasicLayout from './layouts/BasicLayout.vue'
+
+const route = useRoute()
+</script>
